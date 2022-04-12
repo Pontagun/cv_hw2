@@ -60,7 +60,7 @@ def innerprod(img, w):
 
 
 if __name__ == '__main__':
-    image = cv2.imread('bank 256x256.jpg', 0)
+    image = cv2.imread('cloud Cropped.jpg', 0)
     iw = np.zeros((image.shape[0], image.shape[1]))
 
     for r in range(1, len(image) - 1):
@@ -99,4 +99,4 @@ if __name__ == '__main__':
     im = Image.fromarray(grad)
     if im.mode != 'RGB':
         im = im.convert('RGB')
-    im.save("kirsh.jpg")
+    im.save("kirsh_cloud.jpg")
